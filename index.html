@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CTEC Attendance Board</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="attendance-board">
+        <header>
+                <h1>CTEC ATTENDANCE BOARD</h1>
+                <div id="game-btn"><h2>Time: <p id="time"></p></h2></div>
+        </header>
+        <div id="attendance-table">
+            <table>
+                <tr>
+                    <th>Name: </th>
+                    <th>Status:</th>
+                </tr>
+                <tr>
+                    <td class="name">Cisco Ramirez</td>
+                    <td class="wrapper">
+                        <input type="range" name="points" onchange="rangeChange(1);" min="1" step="1" id="custom-toggle-1" class="tgl-def" max="3" value="2">
+                        <span id="span-1">Undetermined</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">Glenn Ballenger</td>
+                    <td class="wrapper">
+                        <input type="range" name="points" onchange="rangeChange(2);" min="1" step="1" id="custom-toggle-2" class="tgl-def" max="3" value="2">
+                        <span id="span-2">Undetermined</span>
+                    </td>
+                </tr>
+            </table>
+            <table >
+                <tr>
+                    <th>Name: </th>
+                    <th>Status:</th>
+                </tr>
+                <tr class="Person">
+                    <td class="name">Ethan Carlson</td>
+                    <td class="wrapper">
+                        <input type="range" name="points" onchange="rangeChange(3);" min="1" step="1" id="custom-toggle-3" class="tgl-def" max="3" value="2">
+                        <span id="span-3">Undetermined</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">Kyle Pollard</td>
+                    <td class="wrapper">
+                        <input type="range" name="points" onchange="rangeChange(4);" min="1" step="1" id="custom-toggle-4" class="tgl-def" max="3" value="2">
+                        <span id="span-4">Undetermined</span>
+                    </td>
+                </tr>
+            </table>
+         </div> 
+        </div>  
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
